@@ -1,0 +1,83 @@
+.anhnen{
+    background-image: url("/image/hoca.jpg");
+    height: 109vh;
+    width: 100wh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+&body{
+    background:-webkit-gradient(linear,0% 0%,0% 100%,  from(rgba(0,191,255,1)),to(rgba(0,0,139,1)));
+    } 
+#shark
+{
+	left:100px; top:400px;
+	width: 200px; height: 147px;
+	position: absolute;
+	-webkit-animation-name: Shark;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1);
+}
+@-webkit-keyframes Shark{
+	0%   {left:100px; top:400px;}
+	1%   {left:100px; top:400px;}
+	20%  {left:700px; top:400px;}
+	40%  {left:700px; -webkit-transform:scaleX(-1);}
+	60%  {left:700px; top:100px; -webkit-transform:scaleX(-1);}
+	80%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
+ 90% {left:300px; top:400px; -webkit-transform:scaleX(-1);}
+ 100% {left:100px; top:400px;}
+}
+
+#seahorse{
+	left:200px; top:500px;
+	width: 150px; height: 100px;
+	position: absolute;
+	-webkit-animation-name: Seahorse;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1);
+}
+@-webkit-keyframes Seahorse
+{
+	0%   {left:100px; top:450px;}
+	1%   {left:100px; top:450px;}
+	10%  {left:300px; top:450px;}
+	20%  {left:600px; top:450px;}
+	40%  {left:700px; top:450px;  -webkit-transform:scaleX(-1);}
+	60%  {left:500px; top:300px; -webkit-transform:scaleX(-1);}
+	80%  {left:400px; top:300px; -webkit-transform:scaleX(-1);}
+ 90% {left:300px; top:350px; -webkit-transform:scaleX(-1);}
+ 100% {left:100px; top:450px;}
+}
+
+#diver1
+{
+	left:200px; top:100px;
+	width: 150px; height: 100px;
+	position: absolute;
+	-webkit-animation-name: Diver1;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function:;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1);
+}
+@-webkit-keyframes Diver1
+{
+	0%   {left:800px; top:100px;-webkit-transform:scaleX(-1);}
+	1%   {left:800px; top:100px;-webkit-transform:scaleX(-1);}
+	10%  {left:600px; top:100px;-webkit-transform:scaleX(-1);}
+	20%  {left:500px; top:300px;-webkit-transform:scaleX(-1);}
+ 40%  {left:200px; top:400px;}
+	50%  {left:200px; top:450px;}
+	80%  {left:400px; top:500px;}
+ 90% {left:700px; top:300px;}
+ 100% {left:800px; top:100px;}
+}
+
