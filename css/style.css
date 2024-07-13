@@ -1,0 +1,210 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 85vh;
+	background-image: url('./image/hoca.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#fish
+{
+	left:100px; top:300px;
+	width: 90px; height: 69px;
+	position:absolute;
+	-webkit-animation-name: Fish;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Fish
+{
+	0%   {left:100px; top:300px;}
+	1%   {left:100px; top:300px;}
+	10%  {left:200px; top:300px;}
+	20%  {left:300px; top:300px;}
+	30%  {left:400px;}
+	40%  {left:500px;-webkit-transform:scaleX(-1);}
+	60%  {left:500px; top:300px; -webkit-transform:scaleX(-1);}
+	80%  {left:300px; top:300px; -webkit-transform:scaleX(-1);}
+	90%  {left:200px; top:300px; -webkit-transform:scaleX(-1);}
+	100% {left:100px; top:300px;}
+}
+
+#submarine
+{
+	left:100px; top:0px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Submarine;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Submarine
+{
+	0%   {left:100px;}
+	1%   {left:100px;}
+	5%   {left:200px;}
+	10%  {left:300px;}
+	15%  {left:400px;}
+	20%  {left:500px;}
+	25%  {left:600px;}
+	30%  {left:700px;}
+	35%  {left:800px;}
+	40%  {left:900px;}
+	60%  {left:1000px;}
+	80%  {left:300px;}
+	90%  {left:200px;}
+	100% {left:100px;}
+}
+
+#giphy
+{
+	left:610px; top:400px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy
+{
+	0%   {top:400px;}
+	1%   {top:400px;}
+	10%  {top:300px;}
+	20%  {top:300px;}
+	30%  {top:300px;}
+	40%  {top:200px;}
+	60%  {top:150px;}
+	70%  {top:150px;}
+	80%  {top:200px;}
+	90%  {top:300px;}
+	100% {top:400px;}
+}
+#giphy1
+{
+	left:650px; top:400px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy1;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy1
+{
+	0%   {top:470px;}
+	1%   {top:470px;}
+	10%  {top:350px;}
+	20%  {top:350px;}
+	30%  {top:350px;}
+	40%  {top:250px;}
+	60%  {top:150px;}
+	70%  {top:150px;}
+	80%  {top:250px;}
+	90%  {top:350px;}
+	100% {top:470px;}
+}
+#giphy2
+{
+	left:570px; top:450px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy2;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy2
+{
+	0%   {top:470px;}
+	1%   {top:470px;}
+	10%  {top:350px;}
+	20%  {top:350px;}
+	30%  {top:350px;}
+	40%  {top:250px;}
+	60%  {top:150px;}
+	70%  {top:150px;}
+	80%  {top:250px;}
+	90%  {top:350px;}
+	100% {top:470px;}
+}
+
+#bubble
+{
+	left:10px; top:0px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Bubble;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Bubble
+{
+	0%   {top:75%;}
+	/* 1%   {top:400px;}
+	10%  {top:350px;}
+	20%  {top:300px;}
+	30%  {top:250px;}
+	40%  {top:200px;}
+	60%  {top:150px;}
+	70%  {top:100px;}
+	80%  {top:50px;}
+	90%  {top:25px;} */
+	100% {top:0px;}
+}
+
+#ship
+{
+	left:1060px; top:410px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Ship;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(-1)
+}
+
+#clam
+{
+	left:100px; top:370px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Clam;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(1)
+}
+
+#giphy3
+{
+	left:5px; top:200px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy3;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(1)
+}
