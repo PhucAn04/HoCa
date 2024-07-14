@@ -33,13 +33,9 @@ body {
 {
 	0%   {left:100px; top:300px;}
 	1%   {left:100px; top:300px;}
-	10%  {left:200px; top:300px;}
-	20%  {left:300px; top:300px;}
-	30%  {left:400px;}
-	40%  {left:500px;-webkit-transform:scaleX(-1);}
-	60%  {left:500px; top:300px; -webkit-transform:scaleX(-1);}
-	80%  {left:300px; top:300px; -webkit-transform:scaleX(-1);}
-	90%  {left:200px; top:300px; -webkit-transform:scaleX(-1);}
+	20%  {left:700px; top:500px;}
+	40%  {left:1100px; top:300px;-webkit-transform:scaleX(-1);}
+	80%  {left:300px; top:300px;-webkit-transform:scaleX(-1);}
 	100% {left:100px; top:300px;}
 }
 
@@ -70,6 +66,58 @@ body {
 	60%  {left:1000px;}
 	80%  {left:300px;}
 	90%  {left:200px;}
+	100% {left:100px;}
+}
+
+#cavoi
+{
+	left:100px; top:450px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Cavoi;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Cavoi
+{
+	0%   {left:100px;}
+	1%   {left:100px;}
+	20%  {left:300px;}
+	30%  {left:500px;}
+	40%  {left:700px;}
+	60%  {left:1000px;}
+	70%  {left:700px;}
+	80%  {left:300px;-webkit-transform:scaleX(1);}
+	90%  {left:100px;}
+	100% {left:100px;}
+}
+
+#mermaid
+{
+	left:100px; top:200px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Mermaid;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Mermaid
+{
+	0%   {left:100px;}
+	1%   {left:100px;}
+	20%  {left:300px; top:100px;}
+	30%  {left:500px; top:100px;}
+	40%  {left:700px; top:100px;}
+	60%  {left:1000px; top:300px;}
+	70%  {left:700px;}
+	80%  {left:300px;-webkit-transform:scaleX(1);}
+	90%  {left:100px;}
 	100% {left:100px;}
 }
 
@@ -154,7 +202,7 @@ body {
 
 #bubble
 {
-	left:10px; top:0px;
+	left:50px; top:0px;
 	width: 200px; height: 147px;
 	position:absolute;
 	-webkit-animation-name: Bubble;
@@ -180,7 +228,7 @@ body {
 }
 #bubble1
 {
-	right:10px; top:0px;
+	left: 1100px; top:0px;
 	width: 200px; height: 147px;
 	position:absolute;
 	-webkit-animation-name: Bubble;
@@ -373,13 +421,27 @@ body {
 	-webkit-animation-play-state:running;	
 	-webkit-transform:scaleX(1)
 }
+@-webkit-keyframes Giphy3
+{
+	0%   {left: 10%; top: 20%;}
+    10%  {left: 70%; top: 50%;}
+    20%  {left: 50%; top: 70%;}
+    30%  {left: 80%; top: 30%;}
+    40%  {left: 20%; top: 60%;}
+    50%  {left: 60%; top: 10%;}
+    60%  {left: 90%; top: 40%;}
+    70%  {left: 30%; top: 70%;}
+    80%  {left: 40%; top: 20%;}
+    90%  {left: 20%; top: 50%;}
+    100% {left: 10%; top: 20%;}
+}
 	</style>
 </head>
 <body>
 
 <div id="background">
 
-    <div id="fish"><img src="./image/casoc.gif"; width="90" height="69"></div>
+    <!-- <div id="fish"><img src="./image/casoc.gif"; width="90" height="69"></div> -->
 	<div id="submarine"><img src="./image/submarine.gif"; width="298" height="149"></div>
 	<div id="ship"><img src="./image/ship.gif"; width="298" height="149"></div>
 	<div id="clam"><img src="./image/clam.gif"; width="198" height="149"></div>
@@ -389,8 +451,12 @@ body {
 	<div id="giphy2"><img src="./image/giphy6.gif"; width="110" height="110"></div>
 	<div id="bubble"><img src="./image/bubble1.gif"; width="110" height="110"></div>
 	<div id="bubble1"><img src="./image/bubble1.gif"; width="110" height="110"></div>
+	<div id="cavoi"><img src="./image/cavoi.gif"; width="298" height="149"></div>
+	<div id="mermaid"><img src="./image/mermaid.gif"; width="498" height="300"></div>
 
 </div>
+<img id="fish" src="./image/casoc.gif" alt="Fish">
+<script src="script.js"></script>
 
 </body>
 </html>
