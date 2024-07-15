@@ -302,10 +302,41 @@ body {
     90%  {left: 20%; top: 50%;}
     100% {left: 10%; top: 20%;}
 }
+
+button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000; /* Đảm bảo nút không bị che bởi các thành phần khác */
+            padding: 10px 20px;
+            font-size: 16px;
+        }
 	</style>
+
+<script>
+        var currentImage = 1; 
+        var image1 = "url('./image/hoca.jpg')";
+        var image2 = "url('./image/hoca1.jpg')";
+
+        function changeBG() {
+            var body = document.body;
+
+            if (currentImage === 1) {
+                body.style.backgroundImage = image1;
+                currentImage = 2;
+            } else {
+                body.style.backgroundImage = image2;
+                currentImage = 1;
+            }
+
+            body.style.backgroundRepeat = "no-repeat";
+            body.style.backgroundSize = "cover";
+            body.style.backgroundAttachment = "fixed"; 
+        }
+    </script>
 </head>
 <body>
-
+<button onclick="changeBG()">Change Background Color</button>
 <div id="background">
 
     <div id="fish"><img src="./image/casoc.gif"; width="90" height="69"></div>
