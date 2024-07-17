@@ -212,15 +212,6 @@ body {
 @-webkit-keyframes Bubble
 {
 	0%   {top:75%;}
-	/* 1%   {top:400px;}
-	10%  {top:350px;}
-	20%  {top:300px;}
-	30%  {top:250px;}
-	40%  {top:200px;}
-	60%  {top:150px;}
-	70%  {top:100px;}
-	80%  {top:50px;}
-	90%  {top:25px;} */
 	100% {top:0px;}
 }
 #bubble1
@@ -238,15 +229,6 @@ body {
 @-webkit-keyframes Bubble
 {
 	0%   {top:75%;}
-	/* 1%   {top:400px;}
-	10%  {top:350px;}
-	20%  {top:300px;}
-	30%  {top:250px;}
-	40%  {top:200px;}
-	60%  {top:150px;}
-	70%  {top:100px;}
-	80%  {top:50px;}
-	90%  {top:25px;} */
 	100% {top:0px;}
 }
 
@@ -333,10 +315,27 @@ button {
             position: fixed;
             top: 10px;
             left: 10px;
-            z-index: 1000; /* Đảm bảo nút không bị che bởi các thành phần khác */
+            z-index: 1000;
             padding: 10px 20px;
             font-size: 16px;
         }
+#change-bg-button {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			z-index: 1000; 
+			padding: 10px 20px;
+			font-size: 16px;
+		}
+
+#change-music-button {
+			position: fixed;
+			top: 55px;
+			left: 10px;
+			z-index: 1000; 
+			padding: 10px 20px;
+			font-size: 16px;
+		}
 	</style>
 
 <script>
@@ -355,11 +354,27 @@ button {
 			currentImage = 1;
 		}
 	}
+	function changeMusic() {
+		const audio = document.getElementById('background-music');
+		
+		if (currentMusic === 1) {
+			audio.src = "./image/music2.mp3";
+			currentMusic = 2;
+		} else {
+			audio.src = "./image/music1.mp3";
+			currentMusic = 1;
+		}
+
+		audio.play();
+	}
 </script>
 
 </head>
 <body>
-<button onclick="changeBG()">Change Background Color</button>
+<button onclick="changeBG()" id="change-bg-button">Change Background Color</button>
+<button onclick="changeMusic()" id="change-music-button">Change Music</button>
+<audio id="background-music" src="./image/music1.mp3" autoplay loop></audio>
+<audio id="background-music" src="../audio/music1.mp3" autoplay loop></audio>
 <div id="background">
 
     <div id="seaweed"><img src="./image/seaweed.gif"; width="150" height="149"></div>
