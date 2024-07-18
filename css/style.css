@@ -280,7 +280,7 @@ body {
 	width: 200px; height: 147px;
 	position:absolute;
 	-webkit-animation-name: Giphy3;
-	-webkit-animation-duration: 15s;
+	-webkit-animation-duration: 25s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state:running;	
