@@ -1,0 +1,320 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 85vh;
+	background-image: url('./image/hoca.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#fish
+{
+	left:100px; top:300px;
+	width: 90px; height: 69px;
+	position:absolute;
+	-webkit-animation-name: Fish;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Fish
+{
+	0%   {left:100px; top:300px;}
+	1%   {left:100px; top:300px;}
+	20%  {left:700px; top:500px;}
+	40%  {left:1100px; top:300px;-webkit-transform:scaleX(-1);}
+	80%  {left:300px; top:300px;-webkit-transform:scaleX(-1);}
+	100% {left:100px; top:300px;}
+}
+
+#submarine
+{
+	left:100px; top:0px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Submarine;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Submarine
+{
+	0%   {left:100px;}
+	1%   {left:100px;}
+	5%   {left:200px;}
+	10%  {left:300px;}
+	15%  {left:400px;}
+	20%  {left:500px;}
+	25%  {left:600px;}
+	30%  {left:700px;}
+	35%  {left:800px;}
+	40%  {left:900px;}
+	60%  {left:1000px;}
+	80%  {left:300px;}
+	90%  {left:200px;}
+	100% {left:100px;}
+}
+
+#cavoi
+{
+	left:100px; top:450px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Cavoi;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Cavoi
+{
+	0%   {left:100px;}
+	1%   {left:100px;}
+	20%  {left:300px;}
+	30%  {left:500px;}
+	40%  {left:700px;}
+	60%  {left:1000px;}
+	70%  {left:700px;}
+	80%  {left:300px;-webkit-transform:scaleX(1);}
+	90%  {left:100px;}
+	100% {left:100px;}
+}
+
+#mermaid
+{
+	left:100px; top:200px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Mermaid;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes Mermaid
+{
+	0%   {left:100px;}
+	1%   {left:100px;}
+	20%  {left:300px; top:100px;}
+	30%  {left:500px; top:100px;}
+	40%  {left:700px; top:100px;}
+	60%  {left:1000px; top:300px;}
+	70%  {left:700px;}
+	80%  {left:300px;-webkit-transform:scaleX(1);}
+	90%  {left:100px;}
+	100% {left:100px;}
+}
+
+#giphy
+{
+	left:610px; top:400px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy
+{
+	0%   {top:400px;}
+	1%   {top:400px;}
+	10%  {top:300px;}
+	20%  {top:300px;}
+	40%  {top:250px;}
+	60%  {top:150px;}
+	70%  {top:150px;}
+	80%  {top:200px;}
+	90%  {top:300px;}
+	100% {top:400px;}
+}
+#giphy1
+{
+	left:650px; top:400px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy1;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy1
+{
+	0%   {top:450px;}
+	1%   {top:450px;}
+	10%  {top:350px;}
+	20%  {top:350px;}
+	40%  {top:250px;}
+	60%  {top:150px;}
+	70%  {top:150px;}
+	80%  {top:250px;}
+	90%  {top:350px;}
+	100% {top:450px;}
+}
+#giphy2
+{
+	left:570px; top:450px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy2;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy2
+{
+	0%   {top:450px;}
+	1%   {top:450px;}
+	10%  {top:350px;}
+	20%  {top:350px;}
+	40%  {top:250px;}
+	60%  {top:150px;}
+	70%  {top:150px;}
+	80%  {top:250px;}
+	90%  {top:350px;}
+	100% {top:450px;}
+}
+
+#bubble
+{
+	left:50px; top:0px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Bubble;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Bubble
+{
+	0%   {top:75%;}
+	100% {top:0px;}
+}
+#bubble1
+{
+	left: 1100px; top:0px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Bubble;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Bubble
+{
+	0%   {top:75%;}
+	100% {top:0px;}
+}
+
+#ship
+{
+	left:1100px; top:410px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Ship;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:paused;	
+	-webkit-transform:scaleX(-1)
+}
+
+#clam
+{
+	left:100px; top:390px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Clam;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(1)
+}
+
+#seaweed
+{
+	left:310px; top:420px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Seaweed;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(1)
+}
+
+#seaweed1
+{
+	left:890px; top:430px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Seaweed;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(1)
+}
+
+#giphy3
+{
+	left:5px; top:200px;
+	width: 200px; height: 147px;
+	position:absolute;
+	-webkit-animation-name: Giphy3;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state:running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes Giphy3
+{
+	0%   {left: 10%; top: 20%;}
+    10%  {left: 70%; top: 50%;}
+    20%  {left: 50%; top: 70%;}
+    30%  {left: 80%; top: 30%;}
+    40%  {left: 20%; top: 60%;}
+    50%  {left: 60%; top: 10%;}
+    60%  {left: 80%; top: 40%;}
+    70%  {left: 30%; top: 70%;}
+    80%  {left: 40%; top: 20%;}
+    90%  {left: 20%; top: 50%;}
+    100% {left: 10%; top: 20%;}
+}
+
+#change-bg-button {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1000; 
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+#change-music-button {
+	position: fixed;
+	top: 55px;
+	left: 10px;
+	z-index: 1000; 
+	padding: 10px 20px;
+	font-size: 16px;
+}

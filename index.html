@@ -342,6 +342,7 @@ button {
 	var currentImage = 1; 
 	var image1 = "url('./image/hoca.jpg')";
 	var image2 = "url('./image/hoca1.jpg')";
+	var currentMusic = 1;
 
 	function changeBG() {
 		var body = document.body;
@@ -354,14 +355,15 @@ button {
 			currentImage = 1;
 		}
 	}
+
 	function changeMusic() {
 		const audio = document.getElementById('background-music');
 		
 		if (currentMusic === 1) {
-			audio.src = "./image/music2.mp3";
+			audio.src = "./image/audio1.mp3";
 			currentMusic = 2;
 		} else {
-			audio.src = "./image/music1.mp3";
+			audio.src = "./image/audio2.mp3";
 			currentMusic = 1;
 		}
 
@@ -371,9 +373,10 @@ button {
 
 </head>
 <body>
-<button onclick="changeBG()" id="change-bg-button">Change Background Color</button>
-<button onclick="changeMusic()" id="change-music-button">Change Music</button>
+<button onclick="changeBG()" id="change-bg-button" >Change Background Color</button>
+<button onclick="changeMusic()" id="change-music-button">music change</button>
 <audio id="background-music" src="./image/music1.mp3" autoplay loop></audio>
+
 <audio id="background-music" src="../audio/music1.mp3" autoplay loop></audio>
 <div id="background">
 
