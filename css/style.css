@@ -6,7 +6,9 @@ body {
 	background-image: url('./image/hoca.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 }
+
 #fish
 {
 	left:100px; top:300px;
